@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping cart</title>
+    <link rel="stylesheet" href="./output.css">
+</head>
+<body>
+    <section class="p-52">
+        <h2 class="text-3xl text-center mb-6 text-sky-400 font-medium">Shopping cart</h2>
+        <div class="container mx-auto">
+            <div class="shadow-lg px-6 py-12">
+                <table class="border-collapse border border-slate-300 w-full">
+                    <thead>
+                        <tr>
+                            <th>image</th>
+                            <th>quantity</th>
+                            <th>price</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td  class="border border-slate-300"><img class="w-24 h-auto " src="./../images/iPhone-14-Purple-6116.jpg" alt=""></td>
+                            <td  class="border border-slate-300 text-center" >
+                                <button id="phone_dec" class="w-8 border-2 border-green-400 rounded-md px-2">-</button>
+                                <input id="inputValue" type="number" class="w-12 text-center border-2 rounded-sm border-slate-600" value="1" min="0">
+                                <button id="phone_inc" class="w-8 border-2 border-green-400 rounded-md px-2">+</button>
+                            </td>
+                            <td  class="border border-slate-300">
+                                $<span id="price">1200</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td  class="border border-slate-300"><img class="w-24 h-auto " src="./../images/cover.jpg" alt=""></td>
+                            <td  class="border border-slate-300 text-center" >
+                                <button id="case_dec" class="w-8 border-2 border-green-400 rounded-md px-2">-</button>
+                                <input id="inputValue2" type="number" class="w-12 text-center border-2 rounded-sm border-slate-600" value="1" min="0">
+                                <button id="case_inc" class="w-8 border-2 border-green-400 rounded-md px-2">+</button>
+                            </td>
+                            <td  class="border border-slate-300">
+                                $<span id="price2">120</span>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <hr>
+
+                <h3 class="mt-12 text-2xl  block mb-6">SubToal : $<span id="sub_total">00</span></h3>
+            </div>
+          
+        </div>
+    </section>
+ <script src="./../js/phone.js"></script>
+ <script src="./../js/case.js"></script>
+    <!-- <script src="./index.js"></script>
+    <script src="./common.js"></script>
+    <script src="./case.js"></script> -->
+</body>
+</html>
